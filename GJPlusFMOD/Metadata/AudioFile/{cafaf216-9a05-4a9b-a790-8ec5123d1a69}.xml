@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{cafaf216-9a05-4a9b-a790-8ec5123d1a69}">
+		<property name="assetPath">
+			<value>004 boss.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>26.239999999999998</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{815b7ae8-fa9d-457b-a898-2a18d3d32d8a}</destination>
+		</relationship>
+	</object>
+</objects>
