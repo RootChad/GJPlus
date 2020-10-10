@@ -8,10 +8,6 @@
 /GJPlusUnity/[Bb]uild/
 /GJPlusUnity/[Bb]uilds/
 /GJPlusUnity/[Ll]ogs/
-/GJPlusFMOD
-
-# MemoryCaptures can get excessive in size.
-# They also could contain extremely sensitive data
 /GJPlusUnity/[Mm]emoryCaptures/
 
 # Asset meta data should only be ignored when the corresponding asset is also ignored
@@ -35,30 +31,30 @@
 /GJPlusUnity/*.csproj
 /GJPlusUnity/*.unityproj
 /GJPlusUnity/*.sln
-*.suo
-*.tmp
-*.user
-*.userprefs
-*.pidb
-*.booproj
-*.svd
-*.pdb
-*.mdb
-*.opendb
-*.VC.db
+/GJPlusUnity/*.suo
+/GJPlusUnity/*.tmp
+/GJPlusUnity/*.user
+/GJPlusUnity/*.userprefs
+/GJPlusUnity/*.pidb
+/GJPlusUnity/*.booproj
+/GJPlusUnity/*.svd
+/GJPlusUnity/*.pdb
+/GJPlusUnity/*.mdb
+/GJPlusUnity/*.opendb
+/GJPlusUnity/*.VC.db
 
 # Unity3D generated meta files
-*.pidb.meta
-*.pdb.meta
-*.mdb.meta
+/GJPlusUnity/*.pidb.meta
+/GJPlusUnity/*.pdb.meta
+/GJPlusUnity/*.mdb.meta
 
 # Unity3D generated file on crash reports
-sysinfo.txt
+/GJPlusUnity/sysinfo.txt
 
 # Builds
-*.apk
-*.unitypackage
+/GJPlusUnity/*.apk
+/GJPlusUnity/*.unitypackage
 
 # Crashlytics generated file
-crashlytics-build.properties
+/GJPlusUnity/crashlytics-build.properties
 
