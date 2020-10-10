@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -55,8 +56,8 @@ public class PlayerController : MonoBehaviour
             CheckWhereToFace();
             SetAnimationState();
         }
-        else
-            anim.SetTrigger("isDead");//Eto no anoloana anle variable anle animationDead --Chains
+        //else
+            //anim.SetTrigger("isDead");//Eto no anoloana anle variable anle animationDead --Chains
     }
 
     void Move()
@@ -67,6 +68,8 @@ public class PlayerController : MonoBehaviour
         if (direction != 0)
         {
             lastDirection = direction;
+            anim.SetFloat("speed", Math.Abs(direction));
+
         }
 
 
@@ -100,8 +103,11 @@ public class PlayerController : MonoBehaviour
     {
         //Ato mgerer anle animation Jump, Walk
         anim.SetBool("isJumping", isJumping && !isGround);
-        anim.SetBool("isFalling", !isGround);
-        anim.SetBool("isFalling", isJumping && !isGround);
+        Console.WriteLine("ITO ILAY JUMP " +isJumping);
+
+        print("ITO ILAY JUMP " + isJumping);
+        //anim.SetBool("isFalling", !isGround);
+        //anim.SetBool("isFalling", isJumping && !isGround);
         anim.SetBool("isWalking", isGround && isWalk);
     }
 
