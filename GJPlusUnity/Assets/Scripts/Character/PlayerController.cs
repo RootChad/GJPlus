@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -56,8 +55,8 @@ public class PlayerController : MonoBehaviour
             CheckWhereToFace();
             SetAnimationState();
         }
-        //else
-            //anim.SetTrigger("isDead");//Eto no anoloana anle variable anle animationDead --Chains
+        else
+            anim.SetTrigger("isDead");//Eto no anoloana anle variable anle animationDead --Chains
     }
 
     void Move()
@@ -68,8 +67,6 @@ public class PlayerController : MonoBehaviour
         if (direction != 0)
         {
             lastDirection = direction;
-            anim.SetFloat("speed", Math.Abs(direction));
-
         }
 
 
@@ -102,12 +99,9 @@ public class PlayerController : MonoBehaviour
     void SetAnimationState()
     {
         //Ato mgerer anle animation Jump, Walk
-       // anim.SetBool("isJumping", isJumping && !isGround);
         anim.SetBool("isJumping", isJumping && !isGround);
-       
-        Debug.Log("ITO ILAY ISGROUND " + isGround);
-        //anim.SetBool("isFalling", !isGround);
-        //anim.SetBool("isFalling", isJumping && !isGround);
+        anim.SetBool("isFalling", !isGround);
+        anim.SetBool("isFalling", isJumping && !isGround);
         anim.SetBool("isWalking", isGround && isWalk);
     }
 
@@ -121,16 +115,18 @@ public class PlayerController : MonoBehaviour
     {
         Debug.DrawRay(groundDetection.position, Vector2.down,Color.green);
         RaycastHit2D hit = Physics2D.Raycast(groundDetection.position, Vector2.down, dist, mask);
-        print("ITO ILAY JUMP " + isJumping);
         if (hit.collider)
         {
-            Debug.Log("Collide eeeee");
-           
+            if (isJumping)
+            {
+                isJumping = false;
+            }
+
             isGround = true;
-            
         }
         else
         {
+
             isGround = false;
         }
     }
