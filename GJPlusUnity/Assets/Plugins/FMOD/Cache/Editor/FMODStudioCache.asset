@@ -15,7 +15,7 @@ MonoBehaviour:
   Path: event:/music
   guid: cc3c116cb0639d43a59683709401dc36
   Banks:
-  - {fileID: 1072342445069194319}
+  - {fileID: 2080517599796111263}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -41,6 +41,23 @@ MonoBehaviour:
   Default: 0
   Exists: 0
 --- !u!114 &-6289491087523911067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: MusicSelector
+  m_EditorClassIdentifier: 
+  Name: MusicSelector
+  Min: 0
+  Max: 3
+  Default: 0
+  Exists: 1
+--- !u!114 &-4037176336023654881
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -89,17 +106,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: 5180305915618907557}
-  - {fileID: 1072342445069194319}
+  - {fileID: 2080517599796111263}
   EditorEvents:
   - {fileID: 9163028445452344607}
   - {fileID: -7456674063703318986}
   EditorParameters:
-  - {fileID: 4943313323484298785}
+  - {fileID: -4037176336023654881}
   MasterBanks:
-  - {fileID: 1072342445069194319}
+  - {fileID: 2080517599796111263}
   StringsBanks:
   - {fileID: 5180305915618907557}
-  stringsBankWriteTime: 637378726943204484
+  stringsBankWriteTime: 637379253984774814
   cacheVersion: 3
 --- !u!114 &243752949620233
 MonoBehaviour:
@@ -154,7 +171,7 @@ MonoBehaviour:
   lastModified: 637378726943204484
   LoadResult: 0
   FileSizes: []
-  Exists: 1
+  Exists: 0
 --- !u!114 &1154027279092195723
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -171,6 +188,24 @@ MonoBehaviour:
   Min: 0
   Max: 3
   Default: 0
+  Exists: 1
+--- !u!114 &2080517599796111263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../GJPlusFMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637379253984764811
+  LoadResult: 0
+  FileSizes: []
   Exists: 1
 --- !u!114 &4510687620247988771
 MonoBehaviour:
@@ -206,7 +241,7 @@ MonoBehaviour:
   Min: 0
   Max: 3
   Default: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &5180305915618907557
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -221,7 +256,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: ../GJPlusFMOD/Build/Desktop/Master.strings.bank
   SubDir: 
-  lastModified: 637378726943204484
+  lastModified: 637379253984774814
   LoadResult: 0
   FileSizes:
   - Name: Desktop
@@ -277,7 +312,7 @@ MonoBehaviour:
   Path: event:/ambi
   guid: 42c9371b88a6d04a88b8d865c0fc4c06
   Banks:
-  - {fileID: 1072342445069194319}
+  - {fileID: 2080517599796111263}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
