@@ -15,7 +15,7 @@ MonoBehaviour:
   Path: event:/music
   guid: cc3c116cb0639d43a59683709401dc36
   Banks:
-  - {fileID: 1072342445069194319}
+  - {fileID: -1106902667380166781}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -75,6 +75,24 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 1
+--- !u!114 &-1106902667380166781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../GJPlusFMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637379200191876096
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -89,17 +107,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: 5180305915618907557}
-  - {fileID: 1072342445069194319}
+  - {fileID: -1106902667380166781}
   EditorEvents:
   - {fileID: 9163028445452344607}
   - {fileID: -7456674063703318986}
   EditorParameters:
-  - {fileID: 4943313323484298785}
+  - {fileID: 5425295963419790629}
   MasterBanks:
-  - {fileID: 1072342445069194319}
+  - {fileID: -1106902667380166781}
   StringsBanks:
   - {fileID: 5180305915618907557}
-  stringsBankWriteTime: 637378726943204484
+  stringsBankWriteTime: 637379200191876096
   cacheVersion: 3
 --- !u!114 &243752949620233
 MonoBehaviour:
@@ -221,11 +239,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: ../GJPlusFMOD/Build/Desktop/Master.strings.bank
   SubDir: 
-  lastModified: 637378726943204484
+  lastModified: 637379200191876096
   LoadResult: 0
   FileSizes:
   - Name: Desktop
     Value: 964
+  Exists: 1
+--- !u!114 &5425295963419790629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: MusicSelector
+  m_EditorClassIdentifier: 
+  Name: MusicSelector
+  Min: 0
+  Max: 3
+  Default: 0
   Exists: 1
 --- !u!114 &5471623223639816078
 MonoBehaviour:
@@ -277,7 +312,7 @@ MonoBehaviour:
   Path: event:/ambi
   guid: 42c9371b88a6d04a88b8d865c0fc4c06
   Banks:
-  - {fileID: 1072342445069194319}
+  - {fileID: -1106902667380166781}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
