@@ -102,10 +102,10 @@ public class PlayerController : MonoBehaviour
     void SetAnimationState()
     {
         //Ato mgerer anle animation Jump, Walk
+       // anim.SetBool("isJumping", isJumping && !isGround);
         anim.SetBool("isJumping", isJumping && !isGround);
-        Console.WriteLine("ITO ILAY JUMP " +isJumping);
-
-        print("ITO ILAY JUMP " + isJumping);
+       
+        Debug.Log("ITO ILAY ISGROUND " + isGround);
         //anim.SetBool("isFalling", !isGround);
         //anim.SetBool("isFalling", isJumping && !isGround);
         anim.SetBool("isWalking", isGround && isWalk);
@@ -121,18 +121,16 @@ public class PlayerController : MonoBehaviour
     {
         Debug.DrawRay(groundDetection.position, Vector2.down,Color.green);
         RaycastHit2D hit = Physics2D.Raycast(groundDetection.position, Vector2.down, dist, mask);
+        print("ITO ILAY JUMP " + isJumping);
         if (hit.collider)
         {
-            if (isJumping)
-            {
-                isJumping = false;
-            }
-
+            Debug.Log("Collide eeeee");
+           
             isGround = true;
+            
         }
         else
         {
-
             isGround = false;
         }
     }
